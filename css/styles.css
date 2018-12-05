@@ -1,0 +1,210 @@
+body{
+    background: linear-gradient(to bottom, #00000066, #000000AA), url(https://i.imgur.com/cki5GiZ.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo-cnt{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logo-cnt img{
+    width: 150px;
+}
+
+.form-cnt{
+    display: block;
+    background: #FFF;
+    width: 320px;
+    margin: 62px auto;
+    margin-bottom: 20px;
+    padding: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #00000077;
+}
+
+.empresa-cnt{
+    position: relative;
+    top: -90px;
+    margin-bottom: -90px;
+}
+
+.empresa-cnt .logo{
+    display: block;
+    background: #FFF;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+
+.empresa-cnt .logo img{
+    width: 100%;
+}
+
+.empresa-cnt .nome{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 6pt;
+    color: #888;
+}
+
+.greeting-cnt{
+    margin: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.greeting-cnt .title{
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.greeting-cnt .subtitle{
+    font-size: 10pt;
+}
+
+.login-cnt .field input{
+    border: 0;
+    border-bottom: 1px solid #BBB;
+    display: block;
+    width: 100%;
+    outline: none;
+    transition: .5s ease;
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 25px;
+    background: transparent;
+}
+ 
+.login-cnt .field{
+    position: relative;
+    padding: 20px 40px;
+    transition: .5s ease;
+}
+
+.login-cnt .field .icon{
+    position: absolute;
+    top: 27px;
+    left: 40px;
+}
+
+.login-cnt .field .error-icon{
+    position: absolute;
+    top: 27px;
+    right: 40px;
+    font-size: .9em;
+    display: none;
+}
+
+.login-cnt .field .validated-icon{
+    position: absolute;
+    top: 27px;
+    right: 40px;
+    font-size: .9em;
+    display: none;
+}
+
+.valid input{
+    border-color: #0c9e1f !important;
+}
+
+.valid .icon{
+    color: #0c9e1f;
+}
+
+.valid .validated-icon{
+    display: block !important;
+    color: #0c9e1f;
+}
+
+.invalid{
+    background: #ffe2e2;
+}
+
+.invalid input{
+    border-color: #9e0c0c !important;
+}
+
+.invalid .icon{
+    color: #aa1414 !important;
+}
+
+.invalid .error-icon{
+    display: block !important;
+    color: #aa1414 !important;
+}
+
+.login-cnt .field input:focus{
+    border-bottom: 1px solid #333;
+}
+
+.login-cnt .button-cnt{
+    padding: 0 40px;
+}
+
+.login-cnt button.submit{
+    background: #00CC07;
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    border-radius: 5px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Open Sants', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: .5s ease;
+}
+
+.login-cnt button.submit:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px #00000033;
+}
+
+.login-cnt .forgot-password{
+    text-transform: uppercase;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9pt;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.dolar-cnt{
+    width: 280px;
+    padding: 15px;
+    background: #000000AA;
+    color: #FFF;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+.dolar-cnt .text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    padding: 0 20px
+}
+
+.dolar-cnt .text .label{
+    font-size: 10pt;
+}
+
+.dolar-cnt .icon{
+    text-align: center;
+    color: #00CC07;
+    font-size: 20pt;
+    padding: 15px;
+}
+

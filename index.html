@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title> Soft Green </title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Opens+Sans|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="shortcut icon" href="./assets/green.png">
+        <script src="./js/vue.js"></script>
+        <meta charset='utf8' />
+        
+        
+    </head>
+
+    <body>
+        <main id='app'>
+            <div class="logo-cnt">
+                <img src="./assets/logo_black.png" alt="Logo Soft Green">
+            </div>
+
+            <div class="form-cnt">
+
+                <div class="empresa-cnt">
+                    <div class="logo">
+                        <img src="./assets/empresalogo.png" :alt='"Logo da "  + nomeEmpresa'>
+                    </div>
+                    <div class="nome">{{ nomeEmpresa }}</div>
+                </div>
+
+                <div class="greeting-cnt">
+                    <div class="title">Bom dia!</div>
+                    <div class="subtitle">Para acessar, faça seu login</div>
+                </div>
+
+                <div class="login-cnt">
+                        <div :class="{field: true, valid: email.length && emailValid, invalid: email.length && !emailValid}">
+                        <input placeholder='Email' type="email" v-model='email'>
+                        <div class="icon">
+                            <i class="far fa-envelope"></i>
+                        </div>  
+                        <div class="error-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="validated-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+
+                    <div :class="{field: true, valid: password.length && passwordValid, invalid: password.length && !passwordValid}">
+                        <input placeholder='Senha' type="password" v-model='password'>
+                        <div class="icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="error-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="validated-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                    </div>
+                    <div class="button-cnt">
+                        <button class="submit">Entrar</button>
+                    </div>
+                    <a href="#" class='forgot-password'>Esqueci minha senha</a>
+                </div>
+            </div>
+
+            <div class="dolar-cnt">
+                <div class="text">
+                    <div class="label">Dólar hoje</div>
+                    <div class="value">US$ {{dolar}} </div>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+            </div>
+        </main>
+        
+        <script src="./js/app.js"></script>
+    </body>
+</html>
