@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to bottom, #00000066, #000000AA), url('/assets/background.jpg');
+    background: linear-gradient(to bottom, #00000066, #000000AA), url('https://nayrakalinesv.github.io/SoftGreen/assets/background.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
