@@ -6,7 +6,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="shortcut icon" href="./assets/green.png">
         <script src="./js/vue.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <meta charset='utf8' />
+
         
         
     </head>
@@ -27,7 +29,7 @@
                 </div>
 
                 <div class="greeting-cnt">
-                    <div class="title">Bom dia!</div>
+                    <div class="title">{{ greetings }}</div>
                     <div class="subtitle">Para acessar, faça seu login</div>
                 </div>
 
@@ -69,8 +71,8 @@
                     <div class="label">Dólar hoje</div>
                     <div class="value">US$ {{dolar}} </div>
                 </div>
-                <div class="icon">
-                    <i class="fas fa-arrow-down"></i>
+                <div class="icon" :style='{ color: gain <= 0 ? "green" : "red" }'>
+                    <i :class="'fas fa-arrow-' + (gain <= 0 ? 'down' : 'up')"></i>
                 </div>
             </div>
         </main>
