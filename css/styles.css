@@ -15,13 +15,14 @@ body{
 
 .form-cnt{
     display: block;
-    background: #FFF;
+    background: rgba(0, 0, 0, 0.5);
     width: 320px;
     margin: 62px auto;
     margin-bottom: 20px;
     padding: 40px 0;
     border-radius: 10px;
     box-shadow: 0 10px 20px #00000077;
+    
 }
 
 .empresa-cnt{
@@ -32,7 +33,7 @@ body{
 
 .empresa-cnt .logo{
     display: block;
-    background: #FFF;
+    background:rgba(0, 0, 0, 0.5);
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -50,6 +51,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 6pt;
+    margin-top: 5px;
     color: #888;
 }
 
@@ -57,6 +59,7 @@ body{
     margin: 10px 0;
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    color: #eee;
 }
 
 .greeting-cnt .title{
@@ -86,10 +89,15 @@ body{
     transition: .5s ease;
 }
 
+.login-cnt input{
+    color: #EEE;
+}
+
 .login-cnt .field .icon{
     position: absolute;
-    top: 27px;
+    top: 24px;
     left: 40px;
+    color: #eee;
 }
 
 .login-cnt .field .error-icon{
@@ -121,9 +129,6 @@ body{
     color: #0c9e1f;
 }
 
-.invalid{
-    background: #ffe2e2;
-}
 
 .invalid input{
     border-color: #9e0c0c !important;
